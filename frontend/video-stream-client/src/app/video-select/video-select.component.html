@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Select a video to watch:</mat-label>
+  <mat-select [(value)]="state.selectedVideo" (selectstart)="getVideos()">
+    <mat-option *ngFor="let video of videos" [value]="video">{{video}}</mat-option>
+  </mat-select>
+</mat-form-field>
+<button (click)="watch()" mat-button>Watch</button>
+<mat-error *ngIf="notSelectedError">Please select a video to watch!</mat-error>

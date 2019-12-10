@@ -1,0 +1,24 @@
+{
+  "name": "video_streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node ./backend/index.js",
+    "client": "cd ./frontend/video-stream-client && ng s",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arriggon/VideoStreaming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arriggon/VideoStreaming/issues"
+  },
+  "homepage": "https://github.com/arriggon/VideoStreaming#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.1"
+  }
+}
